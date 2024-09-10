@@ -76,7 +76,7 @@ void LBooldozerEditor::Render(float dt, LEditorScene* renderer_scene)
 	const ImGuiViewport* mainViewport = ImGui::GetMainViewport();
 
 	ImGuiDockNodeFlags dockFlags = ImGuiDockNodeFlags_AutoHideTabBar;
-	mMainDockSpaceID = ImGui::DockSpaceOverViewport(mainViewport, dockFlags);
+	mMainDockSpaceID = ImGui::DockSpaceOverViewport(0, mainViewport, dockFlags);
 	
 	if(!bInitialized){
 
